@@ -1,0 +1,299 @@
+:root {
+    --main-color: #c0392b;
+    --body-bg: #181616;
+    --box-bg: #221f1f;
+    --text-color: #ffffff;
+
+    --nav-height: 60px;
+    --space-top: 30px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: var(--body-bg);
+    color: var(--text-color);
+    padding-top: var(--nav-height);
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+.container {
+    max-width: 1920px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: #000000;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    height: var(--nav-height);
+}
+
+.nav a {
+    color: var(--text-color);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-menu li ~ li {
+    margin-left: 30px;
+}
+
+.nav-menu a {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav-menu a:hover {
+    color: var(--main-color);
+}
+
+.nav-menu a.btn:hover,
+a.logo:hover,
+a.movie-item:hover {
+    color: unset;
+}
+
+.btn {
+    color: #ffffff;
+    padding: 0.25rem 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+}
+
+.btn-hover::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.btn-hover:hover::before {
+    width: 100%;
+}
+
+.btn i,
+.btn span {
+    z-index: 1;
+}
+
+.btn i {
+    margin-right: 1rem;
+}
+
+.header{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(font\ page.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.textbox{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 81px;
+}
+.textbox p{
+    margin: 10px 0 40px;
+    font-size: 32px;
+    color: #fff;
+}
+
+.herobtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 24px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.herobtn:hover{
+    border: 2px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+.icon.bx{
+    color: #f44336;
+    font-size: 50px;
+    cursor: pointer;
+}
+.books{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+.bookscol{
+    width: 40%;
+    height: 60vh;
+    flex-basis: 30%;
+    background: #0000001e;
+    border-radius: 10px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.bookscol:hover{
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.382);
+}
+.book1 h2{
+    text-align: center;
+    font-size: 15px;
+}
+.book1 img{
+    width: 100%;
+    height: 50vh;
+}
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+.row3{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+.herobtn1{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #f44336;
+    background: #f44336;
+    padding: 10px 24px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.header1{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(font\ page.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+h1 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #0000006e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #990000;
+  }
+  
+  #bollywoodMovies,
+  #hollywoodMovies {
+    margin-top: 10px;
+  }
