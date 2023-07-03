@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.3)), url(images/contact-banner.jpg);
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        .contactus{
+            /* border: 2px solid rgb(255, 255, 255); */
+            background-color: blur(100px);
+            border-radius: 30px;
+            width: 80%;
+            padding: 25px;
+            margin: auto;
+            box-shadow: 0 0 20px 0 black;
+        }
+        .row{
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .contactus h1{
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: white;
+            font-weight: 400;
+        }
+        .contactus h5{
+            font-size: 15px;
+            margin-bottom: 5px;
+            color: white;
+            font-weight: 400;
+        }
+        .contactus p{
+            padding: 0;
+            font-size: 12.5px;
+            color: azure;
+        }
+        .contactcol{
+            flex-basis: 25%;
+            margin-bottom: 30px;
+            /* border: 2px solid white; */
+            box-shadow: 0 0 30px 0 black;
+            background-color: rgba(245, 245, 245, 0.075);
+            border-radius: 15px 50px;
+            padding: 100px;
+        }
+        .contactcol1{
+            flex-basis: 48%;
+            margin-bottom: 30px;
+            padding: 20px;
+            color: white;
+        }
+        .contactcol div{
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .contactcol1 input, .contactcol1 textarea{
+            width: 100%;
+            padding: 15px;
+            color: white;
+            margin-bottom: 17px;
+            border: 0;
+            outline: none;
+            border-bottom: 2px solid white;
+            box-sizing: border-box;
+            background-color: transparent;
+        }
+        ::placeholder{
+            color: white;
+        }
+        .heading .bx{
+            font-size: 35px;
+            color: rgba(255, 255, 255, 0.3);
+            font-weight: 50;
+            padding-right: 5px;
+        }
+        .bx{
+            font-size: 35px;
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: 50;
+            padding-right: 5px;
+        }
+        .herobtn{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 10px 24px;
+            font-size: 15px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        .herobtn:hover{
+            border: 2px solid #3c3c3c;
+            background: #3c3c3c;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <section class="contactus">
+        <div class="row">
+            <div class="contactcol">
+                <div>
+                    <div class="heading">
+                        <i class='bx bx-world'></i>
+                        <span>
+                            <h1>Reach Us</h1>
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <i class='bx bx-current-location' ></i>
+                    <span>
+                        <h5>8631 W 3rd St, Los Angeles</h5>
+                        <p>CA 90048, United States</p>
+                    </span>
+                </div>
+                <div>
+                    <i class='bx bxs-phone' ></i>
+                    <span>
+                        <h5>+1 0123456789</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class='bx bx-envelope' ></i>
+                    <span>
+                        <h5>info@abc.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contactcol1">
+                    
+                    <h1><i class='bx bx-info-circle' ></i>Contact Us</h1>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <a href="" class="herobtn">SEND MESSAGE</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
