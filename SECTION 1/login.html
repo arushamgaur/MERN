@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <style>
@@ -61,15 +62,17 @@
         *{
             font-family: Montserrat;
         }
+        
     </style>
 </head>
 <body>
     <div class="mycard">
+        <i style="padding: 2px; font-size: 50px; color: white;" class="fa-solid fa-lock"></i>
         <h2 form-title>LOGIN FORM</h2>
-        <label for="">Email</label>
+        <label for=""><i style="padding-right: 20px;" class="fa-solid fa-user"></i>Email</label>
         <input class="myinput" type="email">
 
-        <label for="">Password</label>
+        <label for=""><i style="padding-right: 20px;" class="fa-solid fa-key"></i>Password</label>
         <input class="myinput" type="password">
 
         <button class="mybtn">LOGIN</button>
