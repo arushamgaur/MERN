@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+}
+.header{
+    height: 100vh;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)); */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 10px 25px 10px 55px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    background-color: #111;
+}
+nav h1{
+    font-size: 30px;
+    width: 100px;
+    color: #fff;
+}
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    position: relative;
+}
+.navlinks ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+.bx{
+    color: #f44336;
+}
+
+.slider-container {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* CSS styles for the slider images */
+.slider-image {
+    width: 100%;
+    height: 90vh;
+    display: none;
+    background: rgb(132,132,132);
+    background: linear-gradient(0deg, rgba(132,132,132,0.11537114845938379) 0%, rgba(255,0,0,0.4318977591036415) 100%);
+}
+
+/* CSS styles for the slider caption */
+.slider-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: #fff;
+    padding: 10px;
+}
+.slider-caption h2{
+    font-size: 45px;
+    padding: 5px;
+}
+
+.slider-caption p{
+    font-size: 15px;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+/* CSS styles for the button */
+.herobtn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 24px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.herobtn:hover{
+    border: 2px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+.row-poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row-posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row-posters img{
+    width: 100%;
+    height: 100vh;
+}
+
+.row-poster:hover{
+    transform: scale(1.08);
+}
+
+.row-posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row-poster-large{
+    max-height: 250px;
+}
+
+.row-poster-large:hover{
+    transform: scale(1.08);
+}
+
+.row{
+    color: #f44336e0;
+    margin-left: 20px;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #1b1b1b;
+}
+
+.footer h4{
+    color: rgba(245, 245, 245, 0.7);
+    margin-bottom: 10px; 
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.footer p{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    font-weight: 200;
+    line-height: normal;
+    padding: 10px ;
+}
+
+.icons .fa-brands{
+    color: #f44336;
+    font-size: 18px;
+    margin: 0 25px;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.icons .fa-regular{
+    color: #f44336;
+    font-size: 18px;
+}
+
+.textarea {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.textarea h1 {
+    font-size: 45px;
+}
+
+.textarea .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.textarea input {
+    width: 60%;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.herobtn1 {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1.4px solid #f44336;
+    padding: 16px 50px;
+    font-size: 20px;
+    background: #f44336;
+    position: relative;
+    cursor: pointer;
+    right: 1%;
+}
+
+.herobtn1:hover {
+    border: 1.4px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+::placeholder {
+    color: rgb(0, 0, 0);
+}
