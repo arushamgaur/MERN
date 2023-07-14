@@ -65,3 +65,37 @@ console.log('--------------------')
 
 const c = laptop.filter((col) => {return col.color.includes('black')});
 console.log(c)
+
+
+console.log('--------------------')
+
+//sum of all the prices of the laptops
+
+let sum = 0;
+
+for(let i = 0; i<laptop.length;i++){
+    const lprice = parseInt(laptop[i].price);
+    sum = sum + lprice;
+}
+
+console.log("Total Cost: "+sum);
+
+
+console.log('--------------------')
+
+//adding 10% discount to all the laptop
+
+const disprice = laptop.map((laptop) => {
+    const p = parseInt(laptop.price);
+    const dp = p*0.9;
+    laptop.price = dp.toString();
+    return laptop;
+});
+
+console.log(disprice);
+
+console.log('--------------------')
+
+// laptop between 40k and 70k
+const a = laptop.filter((l) => {return l.price > 40000 && l.price < 70000});
+console.log(a);
