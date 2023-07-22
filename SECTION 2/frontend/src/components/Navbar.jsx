@@ -51,6 +51,11 @@ const Navbar = () => {
                     ToDo App
                 </NavLink>
                 </li>
+                <li className="nav-item">
+                <NavLink className="nav-link" to="/chat">
+                    Chatting App
+                </NavLink>
+                </li>
                 <li className="nav-item dropdown">
                 <a
                     className="nav-link dropdown-toggle"

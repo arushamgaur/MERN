@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import EventHandling from './components/EventHandling';
 import StateManagement from './components/StateManagement';
 import ToDo from './components/ToDo';
+import Chat from './components/Chat';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path='event' element={ <EventHandling /> } />
             <Route path='state' element={ <StateManagement /> } />
             <Route path='todo' element={ <ToDo /> } />
+            <Route path='chat' element={ <Chat /> } />
           </Routes>
       </BrowserRouter>
     </div>

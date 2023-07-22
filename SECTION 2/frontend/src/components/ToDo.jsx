@@ -32,6 +32,7 @@ const ToDo = () => {
   return (
     <div>
         <h1 className='text-center dispay-4 fw-bold my-5'>ToDO App</h1>
+        <hr />
         <div className='container'>
             <div className="card">
                 <div className="card-header">
