@@ -1,6 +1,19 @@
+import { useFormik } from "formik";
 import React from "react";
 
 const Signup = () => {
+
+  const signupform = useFormik({
+    initialValues: {
+      email:'',
+      password:'',
+      name:''
+    },
+    onSubmit: (values) => {
+      console.log(values);
+    }
+  });
+
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">
       <div className="card w-25 shadow-lg rounded-5">
@@ -9,12 +22,12 @@ const Signup = () => {
           <h2 className="text-center my-5">Signup Form</h2>
           <form>
             <label htmlFor="">Name</label>
-            <input className="form-control mb-4 rounded-5" type="text" />
+            <input className="form-control mb-4 rounded-5" type="text" name="name" onChange={signupform.handleChange} value={signupform.values.name} />
             <label htmlFor="">Email</label>
-            <input className="form-control mb-4 rounded-5" type="email" />
+            <input className="form-control mb-4 rounded-5" type="email" name="email" onChange={signupform.handleChange} value={signupform.values.email} />
             <label htmlFor="">Password</label>
-            <input className="form-control mb-4 rounded-5" type="password" />
-            <button className="btn btn-danger w-100 mt-4 rounded-5">
+            <input className="form-control mb-4 rounded-5" type="password" name="password" onChange={signupform.handleChange} value={signupform.values.password} />
+            <button type="submit" className="btn btn-danger w-100 mt-4 rounded-5">
               Signup
             </button>
           </form>
