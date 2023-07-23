@@ -31,9 +31,10 @@ const Login = () => {
           <h2 className="text-center my-5">LOGIN FORM</h2>
           <form onSubmit={loginform.handleSubmit}>
             <label htmlFor="">Email</label>
-            <p>{loginform.errors.email}</p>
-            <input className="form-control mb-4 rounded-3" type="email" name="email" onChange={loginform.handleChange} value={loginform.values.email} />
+            <p className="error-label">{loginform.touched.email ? loginform.errors.email : '' }</p>
+            <input className="form-control mb-4 rounded-5" name="email" onChange={loginform.handleChange} value={loginform.values.email} />
             <label htmlFor="">Password</label>
+            <p className="error-label">{loginform.touched.password ? loginform.errors.password : ''  }</p>
             <input className="form-control mb-4 rounded-3" type="password" name="password" onChange={loginform.handleChange} value={loginform.values.password} />
             <button type="submit" className="btn btn-danger w-100 mt-4 rounded-3">LOGIN</button>
           </form>
