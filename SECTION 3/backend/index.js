@@ -5,6 +5,14 @@ const app = express();
 //local host server
 const port = 5000;
 
+//import routers
+const UserRouter = require('./routers/userRouter');
+const ProductRouter = require('./routers/productRouter');
+
+//middlewares
+app.use('/user', UserRouter);
+app.use('/product', ProductRouter);
+
 //creating routes
 app.get('/', (req, res) => {
     res.send('Response from express server');
@@ -12,12 +20,14 @@ app.get('/', (req, res) => {
 
 // /home
 app.get('/home', (req, res)=>{
-    res.send('Home');
-})
+    res.send('Response from Home');
+});
+
 // /add
 app.get('/add', (req, res)=>{
-    res.send('Add');
-})
+    res.send('Response from Add');
+});
+
 //starting the server
 app.listen(port , () => {
     console.log('Express Server Started Successfully');
