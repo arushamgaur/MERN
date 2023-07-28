@@ -9,7 +9,7 @@ const port = 5000;
 const UserRouter = require('./routers/userRouter');
 const ProductRouter = require('./routers/productRouter');
 
-//
+//middleware 
 app.use(express.json());
 
 //middlewares

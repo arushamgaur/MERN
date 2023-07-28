@@ -5,9 +5,12 @@ const url = 'mongodb+srv://arushamgour:Arvi2111@arushamgaur.qmahwm7.mongodb.net/
 // asynchronous function - returns a promise
 mongoose.connect(url)
 .then((result) => {
+    // console.log(result);
     console.log('connected to mongoose');
 }).catch((err) => {
     console.log(err);
 });
 
-console.log('hey yo');
+// console.log('hey yo');
+
+module.exports = mongoose;
