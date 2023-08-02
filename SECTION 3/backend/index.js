@@ -5,16 +5,23 @@ const app = express();
 //local host server
 const port = 5000;
 
+const cors = require('cors');
+
 //import routers
 const UserRouter = require('./routers/userRouter');
 const ProductRouter = require('./routers/productRouter');
+const UtilRouter = require('./routers/util')
 
-//middleware 
+//middleware to convert json data to javascript objects
+app.use(cors({
+    origin : ['https://localhost:3000']
+}));
 app.use(express.json());
 
 //middlewares
 app.use('/user', UserRouter);
 app.use('/product', ProductRouter);
+app.use('/util', UtilRouter);
 
 //creating routes
 app.get('/', (req, res) => {
