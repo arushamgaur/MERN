@@ -9,6 +9,7 @@ import StateManagement from './components/StateManagement';
 import ToDo from './components/ToDo';
 import Chat from './components/Chat';
 import Browse from './components/Browse';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path='todo' element={ <ToDo /> } />
             <Route path='chat' element={ <Chat /> } />
             <Route path='browse' element={ <Browse /> } />
+            <Route path='contact' element={ <ContactUs /> } />
           </Routes>
       </BrowserRouter>
     </div>

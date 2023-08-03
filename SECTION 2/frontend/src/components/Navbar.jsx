@@ -61,6 +61,11 @@ const Navbar = () => {
                     Browse Laptops
                 </NavLink>
                 </li>
+                <li className="nav-item">
+                <NavLink className="nav-link" to="/contact">
+                    Contact Us 
+                </NavLink>
+                </li>
                 <li className="nav-item dropdown">
                 <a
                     className="nav-link dropdown-toggle"
