@@ -7,7 +7,7 @@ router.post('/add', (req, res)=> {
     
     console.log(req.body);
     //saving the data to mongodb
-    new Model(req.body).save()
+    new Model(req.body).save() // save is asyn function
     .then((result) => {
         res.json(result);
     })
